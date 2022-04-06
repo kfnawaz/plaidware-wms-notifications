@@ -1,5 +1,5 @@
 const express = require('express');
-const { admin } = require('./firebase');
+const { API_PORT } = require('./config/env');
 const { sendToOne } = require('./firebase/fcm');
 
 const app = express();
@@ -16,7 +16,7 @@ app.get('/', (_req, res) => {
   res.send({ success: true, data: 'Hey there' });
 });
 
-app.listen(9999, () => {
-  console.log('Server listening on port 9999');
-  console.log('http://localhost:9999');
+app.listen(API_PORT, () => {
+  console.log(`Server listening on port ${API_PORT}`);
+  console.log(`http://localhost:${API_PORT}`);
 });
