@@ -1,15 +1,22 @@
 {
-  "name": "plaidware-wms-notif",
+  "name": "plaidware-wms-notifications",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfnawaz/plaidware-wms-notifications.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kfnawaz/plaidware-wms-notifications/issues"
+  },
+  "homepage": "https://github.com/kfnawaz/plaidware-wms-notifications#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
