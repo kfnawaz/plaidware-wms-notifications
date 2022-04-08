@@ -13,7 +13,7 @@ app.post('/send', (req, res) => {
 });
 
 app.get('/', (_req, res) => {
-  res.send({ success: true, data: 'Hey there' });
+  res.send({ success: true, data: 'Plaidware WMS notification server' });
 });
 
 app.listen(API_PORT, () => {
